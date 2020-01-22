@@ -4,5 +4,7 @@ function Thermostat(){
 }
 Thermostat.prototype.temp = function(){
   return this.defaultTemp;
-
+};
+Thermostat.prototype.up = function(){
+    return this.defaultTemp+=;
 };

@@ -8,5 +8,14 @@ describe('Thermostat', function() {
         thermostat = new Thermostat();
         expect(thermostat.temp()).toEqual(20);
       });
+
+    });
+    describe('you can increase and decrease the temp', function() {
+      it('can increase the temp with an up function', function() {
+
+        thermostat = new Thermostat();
+        thermostat.up();
+        expect(thermostat.temp()).toEqual(21);
+      });
     });
   });
